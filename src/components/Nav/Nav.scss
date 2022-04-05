@@ -1,0 +1,39 @@
+.nav {
+  /*display stuff*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  /* box-model */
+  padding: 32px;
+  margin-bottom: 184px;
+  &__list {
+    /*display stuff*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* typography */
+    font-size: 14px;
+    font-family: "Helvetica";
+    font-weight: 400;
+    color: #a0a3a7;
+  }
+  &__button {
+    /* box-model */
+    margin-left: auto;
+    margin-right: 0;
+    padding: 16px 24px;
+    /* typography */
+    font-size: 14px;
+    /* formalization */
+    background: linear-gradient(93.22deg, #e1e1e1 8.37%, #ffffff 99.95%);
+    box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08),
+      inset 1px 1px 1px rgba(135, 135, 135, 0.32);
+    border-radius: 999px;
+  }
+  @media (max-width: 768px) {
+    .nav__button {
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+  }
+}
