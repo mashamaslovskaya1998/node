@@ -1,24 +1,32 @@
 import "./Nav.scss";
-import svg from "../../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 
 const Nav = () => {
   return (
     <nav className="nav">
       <a href="#" className="nav__logo">
-        <img src={svg} alt="logo"></img>
+        <img src={logo} alt="logo"></img>
       </a>
       <ul className="nav__list">
         <li className="nav__item">
-          <a href="#">Features</a>
+          <a href="#" className="nav__link">
+            Features
+          </a>
         </li>
         <li className="nav__item">
-          <a href="">Partners</a>
+          <a href="#" className="nav__link">
+            Partners
+          </a>
         </li>
         <li className="nav__item">
-          <a href="">Stories</a>
+          <a href="#" className="nav__link">
+            Stories
+          </a>
         </li>
       </ul>
-      <button className="nav__button">Download for free</button>
+      <button className="nav__button" type="button">
+        Download for free
+      </button>
     </nav>
   );
 };
